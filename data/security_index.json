@@ -1,82 +1,426 @@
 {
-  "icarai": {
-    "displayName": "Icaraí",
-    "roubosRua": 2.1,
-    "roubosVeiculo": 1.4,
-    "letalidade": 0.3,
-    "tendencia": 0.8,
-    "observacao": "Indicadores simulados em faixa relativamente favorável."
+  "morrodoestado": {
+    "displayName": "Morro do Estado",
+    "roubosRua": 2.5,
+    "roubosVeiculo": 1.1,
+    "letalidade": 1.4,
+    "tendencia": -0.3,
+    "observacao": "Área de vulnerabilidade; menor incidência patrimonial, mas letalidade elevada."
   },
   "centro": {
     "displayName": "Centro",
-    "roubosRua": 4.7,
-    "roubosVeiculo": 2.9,
-    "letalidade": 0.9,
-    "tendencia": -0.6,
-    "observacao": "Movimento intenso e maior pressão sobre roubos de rua."
-  },
-  "santarosa": {
-    "displayName": "Santa Rosa",
-    "roubosRua": 3.1,
-    "roubosVeiculo": 1.9,
-    "letalidade": 0.5,
-    "tendencia": 0.2,
-    "observacao": "Faixa intermediária de risco no conjunto simulado."
-  },
-  "fonseca": {
-    "displayName": "Fonseca",
-    "roubosRua": 3.8,
-    "roubosVeiculo": 2.2,
+    "roubosRua": 4.8,
+    "roubosVeiculo": 2.7,
     "letalidade": 0.8,
-    "tendencia": -0.2,
-    "observacao": "Risco moderado a elevado na base simulada."
+    "tendencia": -0.5,
+    "observacao": "Alto fluxo de transeuntes; pressão máxima em roubos de rua."
   },
-  "barreto": {
-    "displayName": "Barreto",
-    "roubosRua": 3.5,
-    "roubosVeiculo": 2.1,
-    "letalidade": 0.7,
+  "pontadareia": {
+    "displayName": "Ponta d'Areia",
+    "roubosRua": 2.6,
+    "roubosVeiculo": 1.5,
+    "letalidade": 0.4,
+    "tendencia": 0.2,
+    "observacao": "Risco moderado com influência do setor naval e proximidade ao Centro."
+  },
+  "saodomingos": {
+    "displayName": "São Domingos",
+    "roubosRua": 2.8,
+    "roubosVeiculo": 1.4,
+    "letalidade": 0.3,
     "tendencia": 0.1,
-    "observacao": "Risco moderado na base simulada."
+    "observacao": "Polo universitário; furtos e roubos a pedestres em faixas intermediárias."
   },
-  "itaipu": {
-    "displayName": "Itaipu",
-    "roubosRua": 1.7,
-    "roubosVeiculo": 1.1,
+  "jurujuba": {
+    "displayName": "Jurujuba",
+    "roubosRua": 1.5,
+    "roubosVeiculo": 0.8,
+    "letalidade": 0.5,
+    "tendencia": 0.4,
+    "observacao": "Isolamento geográfico favorece baixos índices patrimoniais."
+  },
+  "vitalbrazil": {
+    "displayName": "Vital Brazil",
+    "roubosRua": 2.4,
+    "roubosVeiculo": 1.6,
+    "letalidade": 0.3,
+    "tendencia": 0.3,
+    "observacao": "Área residencial de transição; índices controlados."
+  },
+  "pepequeno": {
+    "displayName": "Pé Pequeno",
+    "roubosRua": 2.1,
+    "roubosVeiculo": 1.3,
     "letalidade": 0.2,
-    "tendencia": 0.6,
-    "observacao": "Faixa favorável de segurança na base simulada."
+    "tendencia": 0.4,
+    "observacao": "Bairro pacato, índices de criminalidade relativamente baixos."
+  },
+  "gragoata": {
+    "displayName": "Gragoatá",
+    "roubosRua": 2.5,
+    "roubosVeiculo": 1.2,
+    "letalidade": 0.2,
+    "tendencia": 0.3,
+    "observacao": "Influência do fluxo estudantil, risco intermediário."
   },
   "saofrancisco": {
     "displayName": "São Francisco",
-    "roubosRua": 2.0,
-    "roubosVeiculo": 1.5,
-    "letalidade": 0.3,
-    "tendencia": 0.5,
-    "observacao": "Faixa favorável de segurança na base simulada."
-  },
-  "charitas": {
-    "displayName": "Charitas",
-    "roubosRua": 1.8,
-    "roubosVeiculo": 1.2,
+    "roubosRua": 1.9,
+    "roubosVeiculo": 1.4,
     "letalidade": 0.2,
-    "tendencia": 0.5,
-    "observacao": "Faixa favorável de segurança na base simulada."
+    "tendencia": 0.6,
+    "observacao": "Polo gastronômico e residencial; índices baixos e policiamento presente."
   },
-  "itaipuacu": {
-    "displayName": "Itaipuaçu",
-    "roubosRua": 2.7,
+  "santarosa": {
+    "displayName": "Santa Rosa",
+    "roubosRua": 3.0,
     "roubosVeiculo": 1.8,
     "letalidade": 0.4,
     "tendencia": 0.1,
-    "observacao": "Faixa intermediária favorável na base simulada."
+    "observacao": "Alta densidade populacional; índices intermediários na Zona Sul."
   },
   "inga": {
     "displayName": "Ingá",
     "roubosRua": 2.3,
+    "roubosVeiculo": 1.1,
+    "letalidade": 0.2,
+    "tendencia": 0.5,
+    "observacao": "Área residencial consolidada, faixa favorável de segurança."
+  },
+  "fatima": {
+    "displayName": "Fátima",
+    "roubosRua": 2.4,
+    "roubosVeiculo": 1.5,
+    "letalidade": 0.3,
+    "tendencia": 0.3,
+    "observacao": "Características similares a Santa Rosa, risco moderado."
+  },
+  "boaviagem": {
+    "displayName": "Boa Viagem",
+    "roubosRua": 1.6,
+    "roubosVeiculo": 0.9,
+    "letalidade": 0.1,
+    "tendencia": 0.7,
+    "observacao": "Baixo fluxo de passagem; alta sensação de segurança."
+  },
+  "icarai": {
+    "displayName": "Icaraí",
+    "roubosRua": 2.0,
+    "roubosVeiculo": 1.2,
+    "letalidade": 0.2,
+    "tendencia": 0.7,
+    "observacao": "Principal bairro da Zona Sul; índices favoráveis mantidos por forte policiamento."
+  },
+  "charitas": {
+    "displayName": "Charitas",
+    "roubosRua": 1.7,
+    "roubosVeiculo": 1.1,
+    "letalidade": 0.2,
+    "tendencia": 0.6,
+    "observacao": "Faixa favorável de segurança na orla."
+  },
+  "cachoeiras": {
+    "displayName": "Cachoeiras",
+    "roubosRua": 2.6,
+    "roubosVeiculo": 1.4,
+    "letalidade": 0.8,
+    "tendencia": -0.1,
+    "observacao": "Área de encosta com complexidades sociais; letalidade em atenção."
+  },
+  "viradouro": {
+    "displayName": "Viradouro",
+    "roubosRua": 2.4,
+    "roubosVeiculo": 1.2,
+    "letalidade": 1.1,
+    "tendencia": -0.2,
+    "observacao": "Comunidade com histórico de conflitos; atenção à letalidade."
+  },
+  "vicosojardim": {
+    "displayName": "Viçoso Jardim",
+    "roubosRua": 3.2,
+    "roubosVeiculo": 2.0,
+    "letalidade": 0.9,
+    "tendencia": -0.2,
+    "observacao": "Região Norte; pressão moderada a alta em índices gerais."
+  },
+  "tenentejardim": {
+    "displayName": "Tenente Jardim",
+    "roubosRua": 3.3,
+    "roubosVeiculo": 2.1,
+    "letalidade": 0.8,
+    "tendencia": -0.1,
+    "observacao": "Divisa com São Gonçalo; impacto na rota de fuga."
+  },
+  "santana": {
+    "displayName": "Santana",
+    "roubosRua": 3.1,
+    "roubosVeiculo": 1.9,
+    "letalidade": 0.5,
+    "tendencia": 0.1,
+    "observacao": "Área de comércio e serviços pesados; risco intermediário."
+  },
+  "santabarbara": {
+    "displayName": "Santa Bárbara",
+    "roubosRua": 2.9,
+    "roubosVeiculo": 2.3,
+    "letalidade": 0.6,
+    "tendencia": 0.0,
+    "observacao": "Proximidade a rodovias aumenta risco de roubo de veículos."
+  },
+  "baldeador": {
+    "displayName": "Baldeador",
+    "roubosRua": 3.0,
+    "roubosVeiculo": 2.5,
+    "letalidade": 0.7,
+    "tendencia": -0.2,
+    "observacao": "Via de escoamento rápido (RJ-104); alerta para roubo de carga e veículos."
+  },
+  "caramujo": {
+    "displayName": "Caramujo",
+    "roubosRua": 3.4,
+    "roubosVeiculo": 2.6,
+    "letalidade": 1.5,
+    "tendencia": -0.4,
+    "observacao": "Complexo com altos índices históricos de confronto e fuga."
+  },
+  "cubango": {
+    "displayName": "Cubango",
+    "roubosRua": 3.5,
+    "roubosVeiculo": 2.0,
+    "letalidade": 0.9,
+    "tendencia": -0.1,
+    "observacao": "Alta densidade na Zona Norte; pressão em crimes patrimoniais."
+  },
+  "engenhoca": {
+    "displayName": "Engenhoca",
+    "roubosRua": 3.7,
+    "roubosVeiculo": 2.2,
+    "letalidade": 1.0,
+    "tendencia": -0.2,
+    "observacao": "Risco elevado na Zona Norte."
+  },
+  "fonseca": {
+    "displayName": "Fonseca",
+    "roubosRua": 4.1,
+    "roubosVeiculo": 2.9,
+    "letalidade": 1.1,
+    "tendencia": -0.4,
+    "observacao": "Principal artéria da cidade (Alameda); alta vulnerabilidade a roubos."
+  },
+  "barreto": {
+    "displayName": "Barreto",
+    "roubosRua": 3.6,
+    "roubosVeiculo": 2.4,
+    "letalidade": 0.7,
+    "tendencia": 0.0,
+    "observacao": "Risco moderado a elevado, com forte caráter industrial/residencial."
+  },
+  "saolourenco": {
+    "displayName": "São Lourenço",
+    "roubosRua": 3.1,
     "roubosVeiculo": 1.7,
+    "letalidade": 0.4,
+    "tendencia": 0.1,
+    "observacao": "Proximidade ao Centro afeta estatísticas de rua."
+  },
+  "ilhadaconceicao": {
+    "displayName": "Ilha da Conceição",
+    "roubosRua": 2.2,
+    "roubosVeiculo": 1.0,
     "letalidade": 0.3,
     "tendencia": 0.4,
-    "observacao": "Faixa relativamente favorável na base simulada."
+    "observacao": "Polo naval com acessos restritos; índices relativamente controlados."
+  },
+  "largodobarradas": {
+    "displayName": "Largo do Barradas",
+    "roubosRua": 3.5,
+    "roubosVeiculo": 2.1,
+    "letalidade": 0.5,
+    "tendencia": -0.1,
+    "observacao": "Entroncamento comercial movimentado; risco patrimonial."
+  },
+  "jacare": {
+    "displayName": "Jacaré",
+    "roubosRua": 2.4,
+    "roubosVeiculo": 1.5,
+    "letalidade": 0.6,
+    "tendencia": 0.1,
+    "observacao": "Região Oceânica interiorana; índices intermediários."
+  },
+  "serragrande": {
+    "displayName": "Serra Grande",
+    "roubosRua": 2.2,
+    "roubosVeiculo": 1.4,
+    "letalidade": 0.4,
+    "tendencia": 0.2,
+    "observacao": "Tranquilidade predominante com pequenos focos de atenção."
+  },
+  "engenhodomato": {
+    "displayName": "Engenho do Mato",
+    "roubosRua": 2.5,
+    "roubosVeiculo": 1.6,
+    "letalidade": 0.5,
+    "tendencia": 0.1,
+    "observacao": "Expansão urbana recente afeta ligeiramente os índices locais."
+  },
+  "cafuba": {
+    "displayName": "Cafubá",
+    "roubosRua": 2.1,
+    "roubosVeiculo": 1.4,
+    "letalidade": 0.3,
+    "tendencia": 0.4,
+    "observacao": "Abertura do túnel estabilizou a região, integrando-a com a Zona Sul."
+  },
+  "maravista": {
+    "displayName": "Maravista",
+    "roubosRua": 1.8,
+    "roubosVeiculo": 1.1,
+    "letalidade": 0.2,
+    "tendencia": 0.6,
+    "observacao": "Perfil estritamente residencial; área favorável."
+  },
+  "itaipu": {
+    "displayName": "Itaipu",
+    "roubosRua": 1.7,
+    "roubosVeiculo": 1.0,
+    "letalidade": 0.2,
+    "tendencia": 0.7,
+    "observacao": "Região litorânea consolidada; segurança em alta."
+  },
+  "itacoatiara": {
+    "displayName": "Itacoatiara",
+    "roubosRua": 0.8,
+    "roubosVeiculo": 0.4,
+    "letalidade": 0.0,
+    "tendencia": 0.9,
+    "observacao": "Controle de acesso natural e guarita; os menores índices da cidade."
+  },
+  "jardimimbui": {
+    "displayName": "Jardim Imbuí",
+    "roubosRua": 1.6,
+    "roubosVeiculo": 0.9,
+    "letalidade": 0.1,
+    "tendencia": 0.6,
+    "observacao": "Área pacata adjacente a Tibau/Piratininga."
+  },
+  "santoantonio": {
+    "displayName": "Santo Antônio",
+    "roubosRua": 2.0,
+    "roubosVeiculo": 1.2,
+    "letalidade": 0.3,
+    "tendencia": 0.5,
+    "observacao": "Residencial de transição na Oceânica; risco baixo."
+  },
+  "camboinhas": {
+    "displayName": "Camboinhas",
+    "roubosRua": 0.9,
+    "roubosVeiculo": 0.5,
+    "letalidade": 0.0,
+    "tendencia": 0.8,
+    "observacao": "Bairro planejado com forte segurança privada e entrada única."
+  },
+  "piratininga": {
+    "displayName": "Piratininga",
+    "roubosRua": 1.8,
+    "roubosVeiculo": 1.2,
+    "letalidade": 0.2,
+    "tendencia": 0.6,
+    "observacao": "Forte consolidação turística e residencial; área muito favorável."
+  },
+  "cantagalo": {
+    "displayName": "Cantagalo",
+    "roubosRua": 2.9,
+    "roubosVeiculo": 1.8,
+    "letalidade": 0.8,
+    "tendencia": -0.1,
+    "observacao": "Pendotiba; pressão em vias secundárias e letalidade em alerta."
+  },
+  "mariapaula": {
+    "displayName": "Maria Paula",
+    "roubosRua": 3.2,
+    "roubosVeiculo": 2.4,
+    "letalidade": 0.7,
+    "tendencia": -0.2,
+    "observacao": "Divisa com São Gonçalo reflete em elevação de roubo de veículos."
+  },
+  "vilaprogresso": {
+    "displayName": "Vila Progresso",
+    "roubosRua": 2.6,
+    "roubosVeiculo": 1.6,
+    "letalidade": 0.4,
+    "tendencia": 0.2,
+    "observacao": "Residencial em Pendotiba; índices medianos."
+  },
+  "maceio": {
+    "displayName": "Maceió",
+    "roubosRua": 2.8,
+    "roubosVeiculo": 1.7,
+    "letalidade": 0.5,
+    "tendencia": 0.1,
+    "observacao": "Risco moderado na conexão Pendotiba-Oceânica."
+  },
+  "largodabatalha": {
+    "displayName": "Largo da Batalha",
+    "roubosRua": 3.5,
+    "roubosVeiculo": 2.2,
+    "letalidade": 0.6,
+    "tendencia": -0.1,
+    "observacao": "Nó de trânsito importante; atrai crimes de oportunidade (pedestres)."
+  },
+  "sape": {
+    "displayName": "Sapê",
+    "roubosRua": 3.0,
+    "roubosVeiculo": 2.0,
+    "letalidade": 0.6,
+    "tendencia": 0.0,
+    "observacao": "Faixa intermediária de risco no eixo Pendotiba."
+  },
+  "matapaca": {
+    "displayName": "Matapaca",
+    "roubosRua": 2.7,
+    "roubosVeiculo": 1.8,
+    "letalidade": 0.4,
+    "tendencia": 0.1,
+    "observacao": "Área mais arborizada e isolada; índices de alerta moderado."
+  },
+  "badu": {
+    "displayName": "Badu",
+    "roubosRua": 3.1,
+    "roubosVeiculo": 1.9,
+    "letalidade": 0.5,
+    "tendencia": 0.0,
+    "observacao": "Expansão comercial acompanhada de leve aumento na incidência."
+  },
+  "ititioca": {
+    "displayName": "Ititioca",
+    "roubosRua": 2.8,
+    "roubosVeiculo": 1.7,
+    "letalidade": 0.6,
+    "tendencia": -0.1,
+    "observacao": "Área de encosta, índices medianos com letalidade em atenção."
+  },
+  "muriqui": {
+    "displayName": "Muriqui",
+    "roubosRua": 2.5,
+    "roubosVeiculo": 2.0,
+    "letalidade": 0.4,
+    "tendencia": 0.1,
+    "observacao": "Região Leste rural/isolada; furtos e veículos pontuais."
+  },
+  "varzeadasmocas": {
+    "displayName": "Várzea das Moças",
+    "roubosRua": 3.3,
+    "roubosVeiculo": 2.8,
+    "letalidade": 0.6,
+    "tendencia": -0.3,
+    "observacao": "Forte pressão na Rodovia Amaral Peixoto (RJ-106)."
+  },
+  "riodoouro": {
+    "displayName": "Rio do Ouro",
+    "roubosRua": 3.5,
+    "roubosVeiculo": 2.9,
+    "letalidade": 0.7,
+    "tendencia": -0.3,
+    "observacao": "Área de divisa complexa; alta incidência de roubo de carga e veículos."
   }
 }

@@ -1,0 +1,320 @@
+{
+  "Morro do Estado": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 2,
+    "tendencia": -1
+  },
+  "Centro": {
+    "roubos_rua": 5,
+    "roubos_veiculo": 3,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Ponta d'Areia": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "São Domingos": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Jurujuba": {
+    "roubos_rua": 1,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Vital Brazil": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 2,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Pé Pequeno": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Gragoatá": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "São Francisco": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Santa Rosa": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Ingá": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Fátima": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 2,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Boa Viagem": {
+    "roubos_rua": 1,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Icaraí": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Charitas": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Cachoeiras": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 1,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Viradouro": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 2,
+    "tendencia": -1
+  },
+  "Viçoso Jardim": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Tenente Jardim": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Santana": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": 0
+  },
+  "Santa Bárbara": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": 0
+  },
+  "Baldeador": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 3,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Caramujo": {
+    "roubos_rua": 4,
+    "roubos_veiculo": 3,
+    "letalidade": 2,
+    "tendencia": -1
+  },
+  "Cubango": {
+    "roubos_rua": 4,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Engenhoca": {
+    "roubos_rua": 4,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Fonseca": {
+    "roubos_rua": 4,
+    "roubos_veiculo": 3,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Barreto": {
+    "roubos_rua": 4,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": 0
+  },
+  "São Lourenço": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Ilha da Conceição": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Largo do Barradas": {
+    "roubos_rua": 4,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Jacaré": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": 0
+  },
+  "Serra Grande": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Engenho do Mato": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": 0
+  },
+  "Cafubá": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Maravista": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Itaipu": {
+    "roubos_rua": 1,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Itacoatiara": {
+    "roubos_rua": 0,
+    "roubos_veiculo": 0,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Jardim Imbuí": {
+    "roubos_rua": 1,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Santo Antônio": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Camboinhas": {
+    "roubos_rua": 1,
+    "roubos_veiculo": 0,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Piratininga": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 1,
+    "letalidade": 0,
+    "tendencia": 1
+  },
+  "Cantagalo": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Maria Paula": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 3,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Vila Progresso": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Maceió": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": 0
+  },
+  "Largo da Batalha": {
+    "roubos_rua": 4,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Sapê": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": 0
+  },
+  "Matapaca": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Badu": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": 0
+  },
+  "Ititioca": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 2,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Muriqui": {
+    "roubos_rua": 2,
+    "roubos_veiculo": 2,
+    "letalidade": 0,
+    "tendencia": 0
+  },
+  "Várzea das Moças": {
+    "roubos_rua": 3,
+    "roubos_veiculo": 3,
+    "letalidade": 1,
+    "tendencia": -1
+  },
+  "Rio do Ouro": {
+    "roubos_rua": 4,
+    "roubos_veiculo": 3,
+    "letalidade": 1,
+    "tendencia": -1
+  }
+}
