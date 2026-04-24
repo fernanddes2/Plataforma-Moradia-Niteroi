@@ -1,0 +1,8 @@
+{
+  "weights": {
+    "cost": 40,
+    "area": 20,
+    "location": 20,
+    "safety": 20
+  }
+}

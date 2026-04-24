@@ -1,0 +1,101 @@
+:root {
+  --bg: #eef3f9;
+  --surface: #ffffff;
+  --surface-soft: #f8fbff;
+  --text: #122238;
+  --text-muted: #5b6b81;
+  --border: #d8e2ed;
+  --primary: #0057b8;
+  --primary-strong: #003d82;
+  --good: #157347;
+  --warn: #a76400;
+  --bad: #bb2d1a;
+  --gold: #d49a00;
+  --shadow: 0 14px 36px rgba(18, 34, 56, 0.08);
+  --radius: 18px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; font-family:"Segoe UI", Roboto, Arial, sans-serif; color:var(--text); background:linear-gradient(180deg, #edf2f8 0%, #f8fbff 100%); }
+.hero { display:grid; grid-template-columns:minmax(0, 1.4fr) minmax(290px, 0.8fr); gap:24px; align-items:center; padding:40px min(5vw, 48px) 28px; background:linear-gradient(135deg, #103d75 0%, #0057b8 100%); color:#fff; }
+.hero-copy h1 { margin:0 0 14px; font-size:clamp(1.9rem, 3vw, 3.2rem); line-height:1.06; }
+.eyebrow { margin:0 0 8px; text-transform:uppercase; letter-spacing:0.16em; font-size:0.8rem; opacity:0.78; }
+.subtitle { margin:0; max-width:62ch; color:rgba(255,255,255,0.88); }
+.hero-side { display:grid; gap:12px; }
+.hero-badge { background:rgba(255,255,255,0.14); border:1px solid rgba(255,255,255,0.18); border-radius:24px; padding:22px; box-shadow:inset 0 1px 0 rgba(255,255,255,0.18); }
+.badge-label { display:block; font-size:0.84rem; text-transform:uppercase; letter-spacing:0.1em; opacity:0.78; margin-bottom:6px; }
+.hero-badge strong { display:block; font-size:2rem; margin-bottom:8px; }
+.badge-help { color:rgba(255,255,255,0.82); }
+.hero-actions { display:flex; justify-content:flex-end; }
+.container { padding:24px min(5vw, 48px) 48px; }
+.tabs { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:24px; }
+.tab-button { appearance:none; border:1px solid var(--border); background:rgba(255,255,255,0.84); color:var(--text); border-radius:999px; padding:12px 18px; font-weight:700; cursor:pointer; }
+.tab-button.active, .tab-button:hover { background:var(--primary); color:#fff; border-color:var(--primary); }
+.tab-panel { display:none; }
+.tab-panel.active { display:block; }
+.grid { display:grid; gap:24px; }
+.two-columns { grid-template-columns:1.1fr 0.9fr; }
+.dashboard-grid { grid-template-columns:1fr 1fr; }
+.compare-grid { grid-template-columns:1fr; }
+.ranking-layout { grid-template-columns:0.78fr 1.22fr; }
+.metrics-grid, .analytics-grid { grid-template-columns:repeat(4, minmax(0, 1fr)); }
+.card { background:var(--surface); border:1px solid rgba(216,226,237,0.82); border-radius:var(--radius); box-shadow:var(--shadow); padding:24px; }
+.sticky-card { position:sticky; top:18px; align-self:start; }
+.card h2, .card h3 { margin-top:0; }
+.help-text { margin-top:-4px; color:var(--text-muted); }
+.align-center { align-items:center; }
+.card-header-inline { display:flex; justify-content:space-between; gap:16px; }
+.form-grid, .filter-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:16px; }
+.compact-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+.inline-form { display:flex; gap:12px; margin-bottom:16px; }
+.inline-form input { flex:1; }
+.field { display:flex; flex-direction:column; gap:8px; }
+.field label { font-weight:700; font-size:0.95rem; }
+.field input, .field select, .field textarea, .inline-form input { width:100%; border:1px solid var(--border); border-radius:14px; padding:12px 14px; font:inherit; color:var(--text); background:var(--surface-soft); }
+.checkbox-inline { display:flex; align-items:center; gap:10px; font-weight:700; color:var(--text); }
+.full-width { grid-column:1 / -1; }
+.subsection { padding-top:8px; }
+.filter-box, .security-box, .profile-chip { background:#fbfdff; border:1px solid var(--border); border-radius:16px; padding:16px; }
+.compare-info { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:16px; }
+.actions { display:flex; gap:12px; align-items:center; }
+button.primary, button.secondary { appearance:none; border-radius:14px; padding:12px 16px; font:inherit; font-weight:800; cursor:pointer; }
+button.primary { border:1px solid var(--primary); background:var(--primary); color:#fff; }
+button.primary:hover { background:var(--primary-strong); border-color:var(--primary-strong); }
+button.secondary { border:1px solid var(--border); background:#fff; color:var(--text); }
+button.light { background:rgba(255,255,255,0.16); color:#fff; border-color:rgba(255,255,255,0.3); }
+.icon-button { padding:10px 12px; }
+.metric-card, .analytics-card { border:1px solid var(--border); border-radius:18px; background:var(--surface); box-shadow:var(--shadow); padding:18px; }
+.metric-label, .analytics-label { display:block; color:var(--text-muted); font-size:0.92rem; margin-bottom:8px; }
+.metric-value, .analytics-value { display:block; font-size:1.52rem; margin-bottom:6px; }
+.metric-help, .analytics-help { color:var(--text-muted); }
+.bullet-list { display:grid; gap:10px; padding-left:18px; color:var(--text-muted); }
+.property-list, .ranking-list, .profiles-list, .compare-cards { display:grid; gap:16px; }
+.empty-state { border:2px dashed var(--border); border-radius:16px; min-height:140px; display:grid; place-items:center; text-align:center; color:var(--text-muted); background:#fbfdff; padding:24px; }
+.property-card, .ranking-card, .profile-card, .compare-card { border:1px solid var(--border); border-radius:18px; background:#fff; padding:18px; box-shadow:0 10px 24px rgba(18,34,56,0.05); }
+.property-card.favorite { border-color:rgba(212,154,0,0.45); background:linear-gradient(180deg, rgba(255,248,227,0.6) 0%, #fff 50%); }
+.property-card header, .ranking-card header, .profile-card header, .compare-card header { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; }
+.property-card h3, .ranking-card h3, .profile-card h3, .compare-card h3 { margin:0 0 6px; }
+.property-meta, .ranking-meta, .compare-meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+.property-actions, .profile-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+.link-inline { color:var(--primary); font-weight:700; text-decoration:none; }
+.pill { display:inline-flex; align-items:center; justify-content:center; border-radius:999px; padding:6px 12px; font-size:0.84rem; font-weight:800; }
+.pill.good { background:rgba(21,115,71,0.14); color:var(--good); }
+.pill.warn { background:rgba(167,100,0,0.14); color:var(--warn); }
+.pill.bad { background:rgba(187,45,26,0.14); color:var(--bad); }
+.pill.neutral { background:rgba(91,107,129,0.12); color:var(--text); }
+.pill.gold { background:rgba(212,154,0,0.16); color:var(--gold); }
+.status-text { font-weight:800; }
+.status-text.good { color:var(--good); }
+.status-text.warn { color:var(--warn); }
+.status-text.bad { color:var(--bad); }
+.score-ring { width:78px; height:78px; border-radius:50%; background:radial-gradient(circle at center, #fff 46%, transparent 47%), conic-gradient(var(--primary) calc(var(--score, 0) * 1%), #dbe6f3 0); display:grid; place-items:center; font-weight:900; color:var(--text); flex-shrink:0; }
+.divider { border:0; height:1px; background:var(--border); margin:22px 0; }
+.ranking-summary { margin-bottom:18px; color:var(--text-muted); }
+.small-muted { color:var(--text-muted); font-size:0.92rem; }
+.compare-table-wrap { overflow:auto; margin-top:16px; }
+.compare-table { width:100%; border-collapse:collapse; }
+.compare-table th, .compare-table td { border-bottom:1px solid var(--border); padding:10px 12px; text-align:left; }
+.profile-card.active { border-color:rgba(0,87,184,0.35); background:linear-gradient(180deg, rgba(235,244,255,0.7) 0%, #fff 50%); }
+canvas { width:100%; background:#fbfdff; border:1px solid var(--border); border-radius:16px; }
+@media (max-width: 1120px) { .hero, .two-columns, .dashboard-grid, .ranking-layout, .metrics-grid, .analytics-grid, .form-grid, .compact-grid, .filter-grid { grid-template-columns:1fr; } .inline-form { flex-direction:column; } .sticky-card { position:static; } }
+@media (max-width: 640px) { .container, .hero { padding-left:16px; padding-right:16px; } .tabs { flex-direction:column; } .card { padding:18px; } .card-header-inline, .property-card header, .ranking-card header, .profile-card header, .compare-card header { flex-direction:column; } .compare-info { flex-direction:column; align-items:flex-start; } }

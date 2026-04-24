@@ -1,0 +1,82 @@
+{
+  "icarai": {
+    "displayName": "Icaraí",
+    "roubosRua": 2.1,
+    "roubosVeiculo": 1.4,
+    "letalidade": 0.3,
+    "tendencia": 0.8,
+    "observacao": "Indicadores simulados em faixa relativamente favorável."
+  },
+  "centro": {
+    "displayName": "Centro",
+    "roubosRua": 4.7,
+    "roubosVeiculo": 2.9,
+    "letalidade": 0.9,
+    "tendencia": -0.6,
+    "observacao": "Movimento intenso e maior pressão sobre roubos de rua."
+  },
+  "santarosa": {
+    "displayName": "Santa Rosa",
+    "roubosRua": 3.1,
+    "roubosVeiculo": 1.9,
+    "letalidade": 0.5,
+    "tendencia": 0.2,
+    "observacao": "Faixa intermediária de risco no conjunto simulado."
+  },
+  "fonseca": {
+    "displayName": "Fonseca",
+    "roubosRua": 3.8,
+    "roubosVeiculo": 2.2,
+    "letalidade": 0.8,
+    "tendencia": -0.2,
+    "observacao": "Risco moderado a elevado na base simulada."
+  },
+  "barreto": {
+    "displayName": "Barreto",
+    "roubosRua": 3.5,
+    "roubosVeiculo": 2.1,
+    "letalidade": 0.7,
+    "tendencia": 0.1,
+    "observacao": "Risco moderado na base simulada."
+  },
+  "itaipu": {
+    "displayName": "Itaipu",
+    "roubosRua": 1.7,
+    "roubosVeiculo": 1.1,
+    "letalidade": 0.2,
+    "tendencia": 0.6,
+    "observacao": "Faixa favorável de segurança na base simulada."
+  },
+  "saofrancisco": {
+    "displayName": "São Francisco",
+    "roubosRua": 2.0,
+    "roubosVeiculo": 1.5,
+    "letalidade": 0.3,
+    "tendencia": 0.5,
+    "observacao": "Faixa favorável de segurança na base simulada."
+  },
+  "charitas": {
+    "displayName": "Charitas",
+    "roubosRua": 1.8,
+    "roubosVeiculo": 1.2,
+    "letalidade": 0.2,
+    "tendencia": 0.5,
+    "observacao": "Faixa favorável de segurança na base simulada."
+  },
+  "itaipuacu": {
+    "displayName": "Itaipuaçu",
+    "roubosRua": 2.7,
+    "roubosVeiculo": 1.8,
+    "letalidade": 0.4,
+    "tendencia": 0.1,
+    "observacao": "Faixa intermediária favorável na base simulada."
+  },
+  "inga": {
+    "displayName": "Ingá",
+    "roubosRua": 2.3,
+    "roubosVeiculo": 1.7,
+    "letalidade": 0.3,
+    "tendencia": 0.4,
+    "observacao": "Faixa relativamente favorável na base simulada."
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "perfil_principal",
+    "name": "Perfil Principal",
+    "salaryGross": 0,
+    "otherIncome": 0,
+    "payrollDiscounts": 0,
+    "reserveMonthly": 0,
+    "housingPercent": 30,
+    "expenses": {
+      "food": 0,
+      "transport": 0,
+      "health": 0,
+      "internetPhone": 0,
+      "leisure": 0,
+      "debts": 0,
+      "education": 0,
+      "others": 0
+    },
+    "createdAt": "2026-04-14T00:00:00.000Z",
+    "updatedAt": "2026-04-14T00:00:00.000Z"
+  }
+]

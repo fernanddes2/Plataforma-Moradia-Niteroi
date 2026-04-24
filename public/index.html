@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma de Moradia — V3</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Versão 3 · dashboard + múltiplos perfis + comparação</p>
+      <h1>Plataforma completa de decisão para moradia</h1>
+      <p class="subtitle">Agora com múltiplos perfis financeiros, dashboard mais forte, comparação lado a lado entre imóveis e score automático de segurança por bairro.</p>
+    </div>
+    <div class="hero-side">
+      <div class="hero-badge">
+        <span class="badge-label">Teto de moradia</span>
+        <strong id="heroBudget">R$ 0,00</strong>
+        <span class="badge-help" id="heroProfileName">Perfil ativo: —</span>
+      </div>
+      <div class="hero-actions">
+        <button id="exportCsvButton" class="secondary light">Exportar CSV do perfil</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="tabs" aria-label="Navegação principal">
+      <button class="tab-button active" data-tab="dashboard">1. Dashboard</button>
+      <button class="tab-button" data-tab="perfis">2. Perfis</button>
+      <button class="tab-button" data-tab="financeiro">3. Financeiro</button>
+      <button class="tab-button" data-tab="imoveis">4. Imóveis</button>
+      <button class="tab-button" data-tab="comparar">5. Comparar</button>
+      <button class="tab-button" data-tab="ranking">6. Ranking</button>
+    </nav>
+
+    <section id="tab-dashboard" class="tab-panel active">
+      <div class="grid metrics-grid" id="resultCards"></div>
+      <div class="grid analytics-grid" id="analyticsCards"></div>
+      <div class="grid dashboard-grid">
+        <article class="card">
+          <div class="card-header-inline align-center">
+            <div>
+              <h2>Composição do orçamento</h2>
+              <p class="help-text">Comparação visual entre renda líquida, despesas, reserva e teto de moradia.</p>
+            </div>
+          </div>
+          <canvas id="budgetChart" height="240"></canvas>
+        </article>
+        <article class="card">
+          <div class="card-header-inline align-center">
+            <div>
+              <h2>Custo dos imóveis do perfil</h2>
+              <p class="help-text">Leitura rápida do custo total mensal dos imóveis cadastrados.</p>
+            </div>
+          </div>
+          <canvas id="propertiesChart" height="240"></canvas>
+        </article>
+      </div>
+    </section>
+
+    <section id="tab-perfis" class="tab-panel">
+      <div class="grid two-columns">
+        <article class="card">
+          <h2>Perfis financeiros</h2>
+          <p class="help-text">Crie cenários diferentes, como morar sozinho, dividir apartamento ou trocar de bairro.</p>
+          <form id="newProfileForm" class="inline-form">
+            <input type="text" id="newProfileName" placeholder="Nome do novo perfil" />
+            <button type="submit" class="primary">Criar perfil</button>
+          </form>
+          <div id="profilesList" class="profiles-list"></div>
+        </article>
+        <article class="card">
+          <h2>Como usar os perfis</h2>
+          <ul class="bullet-list">
+            <li>Cada perfil tem seu próprio orçamento.</li>
+            <li>Os imóveis ficam vinculados ao perfil em que foram cadastrados.</li>
+            <li>O dashboard, o ranking e a comparação trabalham com o perfil ativo.</li>
+            <li>Você pode alternar rapidamente entre cenários para tomar decisões melhores.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="tab-financeiro" class="tab-panel">
+      <div class="grid two-columns">
+        <article class="card">
+          <div class="card-header-inline align-center">
+            <div>
+              <h2>Configuração financeira do perfil ativo</h2>
+              <p class="help-text">Defina a sua base mensal para calcular um teto realista e sustentável de moradia.</p>
+            </div>
+          </div>
+          <form id="profileForm" class="form-grid">
+            <div class="field"><label for="profileName">Nome do perfil</label><input type="text" id="profileName" /></div>
+            <div class="field"><label for="housingPercent">Limite de moradia (% da renda líquida)</label><input type="number" step="0.1" min="0" max="100" id="housingPercent" /></div>
+            <div class="field"><label for="salaryGross">Salário bruto (R$)</label><input type="number" step="0.01" min="0" id="salaryGross" /></div>
+            <div class="field"><label for="otherIncome">Outros rendimentos (R$)</label><input type="number" step="0.01" min="0" id="otherIncome" /></div>
+            <div class="field"><label for="payrollDiscounts">Descontos em folha (R$)</label><input type="number" step="0.01" min="0" id="payrollDiscounts" /></div>
+            <div class="field"><label for="reserveMonthly">Reserva mensal (R$)</label><input type="number" step="0.01" min="0" id="reserveMonthly" /></div>
+
+            <div class="subsection full-width"><h3>Despesas fixas</h3></div>
+            <div class="field"><label for="food">Alimentação</label><input type="number" step="0.01" min="0" id="food" /></div>
+            <div class="field"><label for="transport">Transporte</label><input type="number" step="0.01" min="0" id="transport" /></div>
+            <div class="field"><label for="health">Saúde</label><input type="number" step="0.01" min="0" id="health" /></div>
+            <div class="field"><label for="internetPhone">Internet / celular</label><input type="number" step="0.01" min="0" id="internetPhone" /></div>
+            <div class="field"><label for="leisure">Lazer</label><input type="number" step="0.01" min="0" id="leisure" /></div>
+            <div class="field"><label for="debts">Dívidas</label><input type="number" step="0.01" min="0" id="debts" /></div>
+            <div class="field"><label for="education">Educação</label><input type="number" step="0.01" min="0" id="education" /></div>
+            <div class="field"><label for="others">Outras despesas</label><input type="number" step="0.01" min="0" id="others" /></div>
+
+            <div class="actions full-width">
+              <button type="submit" class="primary">Salvar perfil financeiro</button>
+            </div>
+          </form>
+        </article>
+
+        <article class="card">
+          <h2>Interpretação do orçamento</h2>
+          <ul class="bullet-list">
+            <li><strong>Renda líquida</strong>: salário bruto + outros rendimentos - descontos.</li>
+            <li><strong>Saldo disponível</strong>: renda líquida - despesas fixas - reserva.</li>
+            <li><strong>Teto final</strong>: menor valor entre o teto por percentual e o saldo disponível.</li>
+            <li><strong>Segurança automática</strong>: calculada por bairro, sem nota manual.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="tab-imoveis" class="tab-panel">
+      <div class="grid two-columns">
+        <article class="card">
+          <div class="card-header-inline align-center">
+            <div>
+              <h2>Cadastro de imóveis do perfil ativo</h2>
+              <p class="help-text">Agora o bairro é obrigatório para o cálculo automático de segurança.</p>
+            </div>
+            <button id="clearPropertyForm" class="secondary" type="button">Limpar</button>
+          </div>
+          <form id="propertyForm" class="form-grid">
+            <input type="hidden" id="propertyId" />
+            <div class="field full-width"><label for="title">Título</label><input type="text" id="title" required placeholder="Ex.: Apartamento 2 quartos em Icaraí" /></div>
+            <div class="field full-width"><label for="url">Link do anúncio</label><input type="url" id="url" placeholder="https://..." /></div>
+            <div class="field"><label for="rent">Aluguel (R$)</label><input type="number" step="0.01" min="0" id="rent" /></div>
+            <div class="field"><label for="condo">Condomínio (R$)</label><input type="number" step="0.01" min="0" id="condo" /></div>
+            <div class="field"><label for="iptu">IPTU (R$)</label><input type="number" step="0.01" min="0" id="iptu" /></div>
+            <div class="field"><label for="insurance">Seguro (R$)</label><input type="number" step="0.01" min="0" id="insurance" /></div>
+            <div class="field"><label for="fireInsurance">Seguro incêndio (R$)</label><input type="number" step="0.01" min="0" id="fireInsurance" /></div>
+            <div class="field"><label for="otherFees">Outras taxas (R$)</label><input type="number" step="0.01" min="0" id="otherFees" /></div>
+            <div class="field"><label for="area">Área (m²)</label><input type="number" step="0.1" min="0" id="area" /></div>
+            <div class="field"><label for="neighborhood">Bairro / região</label><input type="text" id="neighborhood" required /></div>
+            <div class="field"><label for="localityScore">Nota de localidade (1 a 10)</label><input type="number" step="1" min="0" max="10" id="localityScore" /></div>
+            <div class="field full-width"><label for="notes">Observações</label><textarea id="notes" rows="4" placeholder="Ex.: perto do trabalho, prédio antigo, vaga de garagem, reforma necessária..."></textarea></div>
+            <div class="actions full-width"><button type="submit" class="primary" id="propertySubmitButton">Adicionar imóvel</button></div>
+          </form>
+        </article>
+
+        <article class="card">
+          <div class="card-header-inline align-center">
+            <div>
+              <h2>Lista de imóveis</h2>
+              <p class="help-text">Filtre, favorite e selecione até 3 imóveis para comparação lado a lado.</p>
+            </div>
+            <span class="pill neutral" id="propertyCounter">0 imóveis</span>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-grid">
+              <div class="field"><label for="propertySearch">Busca por título / bairro</label><input id="propertySearch" type="text" placeholder="Ex.: Icaraí, 2 quartos..." /></div>
+              <div class="field"><label for="propertyStatusFilter">Status</label>
+                <select id="propertyStatusFilter">
+                  <option value="all">Todos</option>
+                  <option value="fit">Confortável</option>
+                  <option value="limit">No limite</option>
+                  <option value="over">Acima do limite</option>
+                </select>
+              </div>
+              <div class="field"><label for="propertyMinCost">Custo mínimo (R$)</label><input id="propertyMinCost" type="number" min="0" step="0.01" /></div>
+              <div class="field"><label for="propertyMaxCost">Custo máximo (R$)</label><input id="propertyMaxCost" type="number" min="0" step="0.01" /></div>
+              <label class="checkbox-inline"><input type="checkbox" id="propertyFavoritesOnly" /> Somente favoritos</label>
+            </div>
+          </div>
+
+          <div class="compare-info">
+            <span class="pill gold" id="compareCounter">0 selecionado(s) para comparar</span>
+            <button id="clearCompareButton" class="secondary" type="button">Limpar comparação</button>
+          </div>
+
+          <div id="propertyList" class="property-list empty-state">Nenhum imóvel cadastrado ainda.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tab-comparar" class="tab-panel">
+      <div class="grid compare-grid">
+        <article class="card">
+          <div class="card-header-inline align-center">
+            <div>
+              <h2>Comparação lado a lado</h2>
+              <p class="help-text">Selecione até 3 imóveis na aba de imóveis para ver a comparação detalhada aqui.</p>
+            </div>
+          </div>
+          <div id="compareEmpty" class="empty-state">Selecione imóveis para comparar.</div>
+          <div id="compareCards" class="compare-cards"></div>
+          <div id="compareTableWrap" class="compare-table-wrap"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tab-ranking" class="tab-panel">
+      <div class="grid two-columns ranking-layout">
+        <article class="card sticky-card">
+          <h2>Pesos do ranking</h2>
+          <p class="help-text">Defina o equilíbrio entre custo, tamanho, localidade e segurança.</p>
+          <form id="settingsForm" class="form-grid compact-grid">
+            <div class="field"><label for="weightCost">Peso custo</label><input type="number" step="1" min="0" id="weightCost" /></div>
+            <div class="field"><label for="weightArea">Peso tamanho</label><input type="number" step="1" min="0" id="weightArea" /></div>
+            <div class="field"><label for="weightLocation">Peso localidade</label><input type="number" step="1" min="0" id="weightLocation" /></div>
+            <div class="field"><label for="weightSafety">Peso segurança</label><input type="number" step="1" min="0" id="weightSafety" /></div>
+            <div class="actions full-width"><button type="submit" class="primary">Salvar pesos</button></div>
+          </form>
+          <hr class="divider" />
+          <div class="field"><label for="rankingFilter">Filtrar ranking</label>
+            <select id="rankingFilter">
+              <option value="all">Todos</option>
+              <option value="fit">Somente confortáveis</option>
+              <option value="limit">Somente no limite</option>
+              <option value="over">Somente acima do limite</option>
+              <option value="favorite">Somente favoritos</option>
+            </select>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header-inline align-center">
+            <div>
+              <h2>Ranking dos imóveis</h2>
+              <p class="help-text">Pontuação final de 0 a 10, já considerando a segurança automática, múltiplos perfis e penalização para imóveis acima do teto.</p>
+            </div>
+          </div>
+          <div id="rankingSummary" class="ranking-summary"></div>
+          <div id="rankingList" class="ranking-list empty-state">Cadastre pelo menos um imóvel para gerar o ranking.</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <template id="metricCardTemplate">
+    <article class="metric-card">
+      <span class="metric-label"></span>
+      <strong class="metric-value"></strong>
+      <small class="metric-help"></small>
+    </article>
+  </template>
+
+  <template id="analyticsCardTemplate">
+    <article class="analytics-card">
+      <span class="analytics-label"></span>
+      <strong class="analytics-value"></strong>
+      <small class="analytics-help"></small>
+    </article>
+  </template>
+
+  <script src="/app.js"></script>
+</body>
+</html>
